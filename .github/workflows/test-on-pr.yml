@@ -28,6 +28,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Run Cypress tests with mocks
+      # Run Cypress component tests
       - name: Run tests
-        run: npm run test
+        run: npm run test-component
