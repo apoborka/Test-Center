@@ -12,6 +12,7 @@ export default defineConfig({
   },
 
   e2e: {
+    specPattern: 'cypress/component/**/*.cy.{js,jsx,ts,tsx}', // Updated to point to component tests
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
