@@ -24,20 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Build the server
-      - name: Build server
+      # Build the project
+      - name: Build project
         run: npm run build
 
-      # Start the server
-      - name: Start the server
-        run: npm run start &
-        env:
-          NODE_ENV: test
-
-      # Wait for the server to be ready
-      - name: Wait for server to be ready
-        run: npx wait-on http://localhost:3001
-
-      # Run Cypress tests
+      # Run Cypress tests with mocks
       - name: Run tests
         run: npm run test
