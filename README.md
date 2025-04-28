@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-An application designed to test GitHub Actions including the triggering of Cypress testing when a PR is submitted to the develop branch and the automatic deployment of the main branch to Render. This project utilized EdX starter code.
+An application designed to test GitHub Actions, including the triggering of Cypress testing when a PR is submitted to the develop branch and the automatic deployment of the main branch to Render.
 
 
 ## Table of Contents
