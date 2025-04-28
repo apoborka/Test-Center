@@ -25,6 +25,10 @@ Ten questions will be given, for which a score will be tallied at the end:
 ![Example Question](assets/quizQuestion.jpg)
 ![Quiz Complete](assets/quizComplete.jpg)
 
+When opening PRs into the develop branch, GitHub actions should automatically run Cypress component tests. When merging the develop branch into main, main should be re-deployed to Render.
+
+![GitHub Actions Showing Green](assets/GitHubActions.jpg)
+
 ## License
 This project is licensed under the MIT license. For more details, see the license link: (https://opensource.org/licenses/MIT)
 
