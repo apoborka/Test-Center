@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Build the server
+      - name: Build server
+        run: npm run build
+
       # Start the server
       - name: Start the server
         run: npm run start &
