@@ -5,7 +5,6 @@
 ## Description
 An application designed to test GitHub Actions including the triggering of Cypress testing when a PR is submitted to the develop branch and the automatic deployment of the main branch to Render. This project utilized EdX starter code.
 
-
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,8 +17,6 @@ An application designed to test GitHub Actions including the triggering of Cypre
 Visit the URL:
 [Deployed on Render](https://test-center-afwv.onrender.com/)
 
-
-
 ## Usage
 Visit the deployment URL (above) and participate in the quiz provided, following the on-screen prompts.
 
@@ -27,8 +24,6 @@ Ten questions will be given, for which a score will be tallied at the end:
 
 ![Example Question](assets/quizQuestion.jpg)
 ![Quiz Complete](assets/quizComplete.jpg)
-
-
 
 ## License
 This project is licensed under the MIT license. For more details, see the license link: (https://opensource.org/licenses/MIT)
