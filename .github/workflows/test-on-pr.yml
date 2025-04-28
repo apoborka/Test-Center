@@ -24,6 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Run tests
+      # Set environment variable for deployed backend
+      - name: Set deployed backend URL
+        run: echo "CYPRESS_BASE_URL=https://test-center-afwv.onrender.com" >> $GITHUB_ENV
+
+      # Run Cypress tests
       - name: Run tests
+        env:
+          CYPRESS_BASE_URL: ${{ env.CYPRESS_BASE_URL }}
         run: npm run test
