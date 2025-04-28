@@ -23,8 +23,6 @@ Visit the URL:
 ## Usage
 Visit the deployment URL (above) and participate in the quiz provided, following the on-screen prompts.
 
-![Login Page screenshot](assets/splashPage.jpg)
-
 Ten questions will be given, for which a score will be tallied at the end:
 
 ![Example Question](assets/quizQuestion.jpg)
