@@ -3,7 +3,7 @@ import viteConfig from './vite.config';
 
 export default defineConfig({
   component: {
-    port: 5173,
+    specPattern: 'cypress/component/**/*.cy.{js,jsx,ts,tsx}',
     devServer: {
       framework: 'react',
       bundler: 'vite',
@@ -12,7 +12,6 @@ export default defineConfig({
   },
 
   e2e: {
-    specPattern: 'cypress/component/**/*.cy.{js,jsx,ts,tsx}', // Updated to point to component tests
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
