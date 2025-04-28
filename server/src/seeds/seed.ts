@@ -1,10 +1,14 @@
+import fs from 'fs';
+import path from 'path';
 import db from "../config/connection.js";
 import Question from "../models/Question.js";
 import cleanDB from "./cleanDb.js";
 
 db.once('open', async () => {
   try {
-    const pythonQuestions = (await import('./pythonQuestions.json', { assert: { type: "json" } })).default;
+    const filePath = path.resolve('src/seeds/pythonQuestions.json');
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const pythonQuestions = JSON.parse(fileContent);
 
     await cleanDB('Question', 'questions');
     await Question.insertMany(pythonQuestions);
