@@ -2,9 +2,9 @@ import db from "../config/connection.js";
 import Question from "../models/Question.js";
 import cleanDB from "./cleanDb.js";
 
-db.once('open', async () => {
-  const pythonQuestions = (await import('./pythonQuestions.json')).default;
+const pythonQuestions = require('./pythonQuestions.json');
 
+db.once('open', async () => {
   await cleanDB('Question', 'questions');
 
   await Question.insertMany(pythonQuestions);
